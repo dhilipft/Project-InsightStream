@@ -1,0 +1,59 @@
+/* Define color variables for both themes */
+:root {
+  --primary-color: #D9534F;
+  --primary-hover: #C9302C;
+  
+  /* Light Theme */
+  --bg-light: #F5F5F7;
+  --text-light: #212529;
+  --card-bg-light: #FFFFFF;
+  --nav-bg-light: #FFFFFF;
+  --secondary-text-light: #6c757d;
+  --border-light: #dee2e6;
+
+  /* Dark Theme */
+  --bg-dark: #121212;
+  --text-dark: #EAEAEA;
+  --card-bg-dark: #1E1E1E;
+  --nav-bg-dark: #1E1E1E;
+  --secondary-text-dark: #adb5bd;
+  --border-dark: #343a40;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Apply theme colors */
+.light {
+  --bg-color: var(--bg-light);
+  --text-color: var(--text-light);
+  --card-bg-color: var(--card-bg-light);
+  --nav-bg-color: var(--nav-bg-light);
+  --secondary-text-color: var(--secondary-text-light);
+  --border-color: var(--border-light);
+}
+
+.dark {
+  --bg-color: var(--bg-dark);
+  --text-color: var(--text-dark);
+  --card-bg-color: var(--card-bg-dark);
+  --nav-bg-color: var(--nav-bg-dark);
+  --secondary-text-color: var(--secondary-text-dark);
+  --border-color: var(--border-dark);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

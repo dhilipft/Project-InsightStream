@@ -1,0 +1,211 @@
+/* src/styles/Hero.css */
+.hero-section {
+    color: white;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);
+}
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+.hero-content h1 a {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* src/styles/TopStories.css */
+.top-stories-section {
+    padding: 50px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+.top-stories-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.top-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.story-card {
+    background: var(--card-bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.story-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.story-content {
+    padding: 15px;
+}
+.story-content h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.story-content p {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+}
+
+/* src/styles/HomeArticles.css */
+.home-articles-section {
+    padding: 40px 20px;
+}
+.home-articles-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.home-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+.article-card-home {
+    background: var(--card-bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article-card-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.article-card-home img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.article-card-home h3 {
+    padding: 15px 15px 0 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.article-card-home p {
+    padding: 5px 15px 10px 15px;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+.article-card-home span {
+    display: block;
+    padding: 0 15px 15px 15px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* src/styles/NewsLetter.css */
+.newsletter-section {
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+.newsletter-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.newsletter-content p {
+    margin-bottom: 30px;
+    color: var(--secondary-text-dark);
+}
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.newsletter-form input {
+    padding: 12px 15px;
+    width: 300px;
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+.newsletter-form button {
+    padding: 12px 25px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.newsletter-form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* src/styles/Footer.css */
+.footer {
+    background-color: var(--card-bg-dark);
+    color: var(--secondary-text-dark);
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* src/styles/Home.css */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

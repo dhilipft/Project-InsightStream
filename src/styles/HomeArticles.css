@@ -1,0 +1,61 @@
+.home-articles-section {
+    padding: 40px 20px;
+    /* The hard-coded background-color that was here is now removed */
+}
+
+.home-articles-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color); /* Ensure heading uses theme color */
+}
+
+.home-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.article-card-home {
+    background: var(--card-bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.article-card-home img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-card-home h3 {
+    padding: 15px 15px 0 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.article-card-home p {
+    padding: 5px 15px 10px 15px;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+
+.article-card-home span {
+    display: block;
+    padding: 0 15px 15px 15px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}

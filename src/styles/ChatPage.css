@@ -1,0 +1,108 @@
+.chat-page-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Full height minus navbar */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--card-bg-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.chat-page-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: var(--nav-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.chat-page-header h2 {
+    margin: 0;
+}
+.back-button {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+
+.chat-page-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-page-footer {
+    padding: 15px 20px;
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--nav-bg-color);
+}
+
+.chat-page-footer input {
+    flex-grow: 1;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-page-footer input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.chat-page-footer button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px 20px 20px; 
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}   
+
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 15px; 
+}
+
+.typing-indicator span {
+    height: 8px;
+    width: 8px;
+    background-color: var(--secondary-text-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    animation: bounce 1.2s infinite;
+}
+
+/* Animation delay for each dot */
+.typing-indicator span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-6px);
+    }
+}
