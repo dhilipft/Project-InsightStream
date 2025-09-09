@@ -53,12 +53,12 @@ Get a free API Key from https://newsapi.org
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/insightstream.git
+git clone https://github.com/dhilipft/Project-InsightStream
 
 Navigate into the project directory:
 
 Bash
-cd insightstream
+cd Project-InsightStream
 
 Install NPM packages:
 
